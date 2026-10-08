@@ -39,7 +39,7 @@ function reset(){
 </header>
 <body>
   <div><img :src="src" alt=""></div>
-  <div v-if="k<5" ><ul><li><input id="b1" type="button" value="1. 🥩 De la viande" @click="verif(1)" :disabled="dis"></li> 
+  <div v-if="k<5" ><h3>Que mange-t-il ?</h3></div><ul><li><input id="b1" type="button" value="1. 🥩 De la viande" @click="verif(1)" :disabled="dis"></li> 
     <li><input id="b1" type="button" value="2. 🌿 Des plantes" @click="verif(2)" :disabled="dis"></li>
     <li><input id="b2" type="button" value="3. 🥩🌿 Les deux" @click="verif(3)" :disabled="dis"></li></ul></div>
     <div ><input id="b3" type="button" value="Suivant" :disabled="!dis" @click="suivant()" v-if="k<5">
